@@ -1,0 +1,377 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+
+* {
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
+}
+
+/* Clear fix hack */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: 'Belgrano', serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+#container {
+  width: 960px;
+  margin: auto;
+}
+
+header {}
+
+footer {}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+nav {
+  width: 100%;
+  height: 45px;
+  position: fixed;
+  z-index: 3;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  width: 75%;
+  padding: 0;
+  margin: 0 auto;
+  overflow: auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  color: #fff;
+  font-size: 18px;
+  float: left;
+  margin: 0 15px;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.home-banner {
+  background-color: #A76100;
+  height: 54em;
+  width: 100%;
+  position: relative;
+}
+
+.aboutMe img {
+  width: 24%;
+  height: 29em;
+  float: left;
+  margin: 5%;
+  margin-top: 13em;
+}
+
+p {
+  color: black;
+  font-family: "Belgrano", serif;
+}
+
+.aboutMe {
+  height: 31.25em;
+  width: 100%;
+}
+
+.amDiv {
+  width: 45%;
+  height: 31.25em;
+  float: left;
+  margin-top: 3em;
+  margin-left: 4em;
+}
+
+h1 {
+  color: white;
+  font-size: 36px;
+  margin-top: 2.5em;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+}
+
+/*my work*/
+
+#myWork {
+  background-color: white;
+  color: #ff0000;
+  width: 80%;
+  height: 4.5em;
+  position: absolute;
+  top: 21em;
+  left: 10%;
+  box-shadow: 10px 5px 5px #000;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 6%;
+  color: #a76100;
+}
+
+#myWork h2 {
+  bottom: 50%;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 6%;
+}
+/*///////////projects///////////////////*/
+.projects {
+  height: 165em;
+  width: 100%;
+}
+
+.projectDiv {
+  height: 43em;
+  width: 40%;
+  margin-left: 7%;
+  position: relative;
+  top: 15em;
+  float: left;
+  margin-bottom: 5%;
+  box-shadow: 10px 5px 5px black;
+
+}
+
+.projectPic {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.projectDiv h2 {
+  text-align: center;
+  font-size: 1.5em;
+  bottom: .6em;
+  font-weight: bold;
+}
+
+.projectDiv p {
+  color: black;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.2em;
+}
+
+.faceChanger{
+  background-image: url("./pics/faceChanger.png");
+
+}
+
+.asteroids{
+  background-image: url("./pics/asteroids");
+}
+
+.to-do{
+  background-image: url("./pics/reactToDo");
+}
+
+.techCrunch {
+  background-image: url("http://tim-portfolio.dev/app/uploads/2017/10/techCrunch.png");
+}
+
+.citySearch{
+  background-image: url("./pics/citySearch");
+
+}
+
+.nyTimes {
+  background-image: url("http://tim-portfolio.dev/app/uploads/2017/10/nyTimes.png");
+}
+
+.projectDiv a button {
+  font-size: 1.5em;
+}
+
+.firstButton button {
+  background-color: white;
+  right: 0;
+}
+
+button {
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  float: left;
+  background-color: #A76100;
+  height: 3.3rem;
+  font-size: 1em;
+}
+
+.height {
+  height: 6em;
+}
+
+.fa {
+  margin-left: 0.5em;
+}
+
+/*///////////////////contact me////////////////////*/
+
+.contact {
+  height: 65em;
+  width: 100%;
+  background-color: #a76100;
+}
+
+.contactMe {
+  width: 80%;
+  height: 6.5em;
+  box-shadow: 10px 5px 5px black;
+  position: absolute;
+  background-color: white;
+  margin-left: 10%;
+  margin-top: -4%;
+}
+
+/*////////////////*/
+
+.contactForm{
+  width: 50%;
+  position: relative;
+  top:15em;
+  margin: 0 auto;
+
+}
+
+.contactSum h3 {
+  font-size: 2em;
+  margin: 0;
+  position: relative;
+  top: 100px;
+
+}
+
+.contactForm form input{
+  width: 53em;
+  display: inline-block;
+  height: 2.5em;
+  font-size: 1em;
+  border-radius: .3em
+}
+
+.contactForm form textarea{
+  height: 18em;
+  width: 53em;
+  border-radius: .5em;
+}
+
+h2 {
+  text-align: center;
+  color: #a76100;
+  text-align: center;
+  font-size: 3em;
+  position: relative;
+  bottom: 30px;
+}
+
+h3 {
+  position: relative;
+  top: 8em;
+  text-align: center;
+}
+
+.links {
+  float: right;
+  position: relative;
+  bottom: -190px;
+  margin-right: 2em;
+}
+
+.fa-3x {
+  font-size: 3.5em;
+  color: black;
+  margin-left: 0.5em;
+}
+#submit_button{
+  width: 40%;
+  margin-left: 25%;
+  margin-top: 1em;
+  background-color: black;
+  color: white;
+  border-radius: 1em;
+}
+
+@media only screen and (max-width: 1024px){
+
+#myWork{
+  display: none;
+}
+
+.aboutMe img {
+  width: 35%;
+  height: 35em;
+  float: left;
+  margin: 5%;
+  margin-top: 16em;
+}
+
+.projectDiv{
+  float: none;
+  top: 5em;
+  width: 100%;
+  margin: 0 auto;
+    margin-top: 2em;
+}
+}
+
+}
